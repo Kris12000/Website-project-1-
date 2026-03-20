@@ -38,7 +38,7 @@
     margin: 0 auto;
     padding: 0 3rem;
     z-index: 1;
-    background-color: black;
+    background-color: grey;
 }
 .navbar_menu_container{
     display: flex;
@@ -76,7 +76,7 @@ navbar_link_item{
 }
 #navbar_logo:hover{
    transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
+   transform: scale(1.1);
 }
 
 .navbar_button{
