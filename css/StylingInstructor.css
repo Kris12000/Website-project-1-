@@ -1,0 +1,47 @@
+:root{
+    --font-style: "raleway", "sans-serif";
+    
+    --clr-Dark-Blue: #002856;
+    --clr-Blue: #0093C9;
+    --clr-Green: #80bc00;
+
+    --clr-Oranage: #FF4D00;
+    --clr-Yellow: #FDE021;
+    --clr-Black: #231F20;
+    --clr-White: #FFFFFF;
+
+        
+
+
+
+
+
+}
+
+
+
+.RoethDetails{
+    background: var(--clr-Blue);
+}
+.RoethDetailsWrapper{
+    display:flex;
+    justify-content: center;
+    height: 100%;  /*height: 6rem;*/
+    width: 100%; /*NEEDED!!!!!!!!!*/
+    margin: 0 auto;
+    padding: 0 3rem;
+    z-index: 1;
+}
+
+.RoethQualification{
+    display: flex;
+    flex-direction: row;
+}
+.RoethCardWrapper{
+    display: flex;
+}
+
+.RoethImages img{
+    height: 500px;
+    width: auto;
+}
