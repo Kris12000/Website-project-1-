@@ -26,7 +26,7 @@ font-family: var(--font-style);
 scroll-behavior: smooth;
 
 }
-img{
+#navbar_logo img{
     display: block;
     max-width: 10%;
     max-height: 70%;
@@ -141,7 +141,7 @@ img{
     width: 300px;
 }
 .RoethDetails{
-    background: var(--clr-Blue);
+
 }
 .RoethDetailsWrapper{
     display:flex;
@@ -165,8 +165,13 @@ img{
     justify-content: space-between;
     width: 80%;
 }
-.RoethCards{
-    width: 50;
+.RoethFirstImage{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 3rem 0;
+}
+.RoethQualificationCard{
+    
 }
 
 .RoethImages img{
