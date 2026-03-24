@@ -5,12 +5,13 @@
     --clr-Blue: #0093C9;
     --clr-Green: #80bc00;
 
-    --clr-Oranage: #FF4D00;
+    --clr-Orange: #FF4D00;
     --clr-Yellow: #FDE021;
     --clr-Black: #231F20;
     --clr-White: #FFFFFF;
     --clr-grey: #8d8d8d;
-        
+    
+    --transition: all .3s ease-in-out;
 
 
 
@@ -120,14 +121,8 @@ scroll-behavior: smooth;
 
 
 /* END OF NAVBAR STYLING */
-
-#BigRoethImage{
-    height: 500px;
-    width: 300px;
-}
-.RoethDetails{
-
-}
+/* Sets the height of the image at the top of the page */
+/* Page Wrapper */
 .RoethDetailsWrapper{
     display:flex;
     justify-content: center;
@@ -138,28 +133,78 @@ scroll-behavior: smooth;
     padding: 0 3rem;
     z-index: 1;
 }
-
-.RoethQualification{
+/* Wrapper For Cards */
+.CardsWrapper{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+/* Container For All Cards */
 .RoethCardWrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 80%;
 }
-.RoethFirstImage{
+/* Reusable cards template */
+.Cards{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: .5rem;
+    border-radius: 2rem;
+    color: var(--clr-Black);
+
+}
+.Cards img{
+    border-radius: 2rem;
+}
+/* Container for all of the images at the top of the screen */
+.RoethFirstImages{
     display: flex;
     justify-content: center;
-    padding: 3rem 0 3rem 0;
+    padding: 4.5rem 0 1rem 0;
 }
-.RoethQualificationCard{
-    
-}
-
-.RoethImages img{
+.RoethFirstImages img{
     height: 500px;
     width: auto;
+    padding: .3rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+.RoethFirstImages img:hover{
+    transition: var(--transition);
+    transform: scale(1.02);
+}
+/* Start of Qualification Stuff***************************************************************************************** */
+/* Card with his qualifications */
+.RoethQualificationCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+}
+.RoethQualificationCard h1{
+    margin-bottom: .5rem;
+}
+.RoethQualificationCard a{
+    color: var(--clr-Black);
+}
+.RoethQualificationCard img{
+    height: auto;
+    width: 375px;
+    text-align: center;
+}
+/* Start of Students Stuff***************************************************************************************** */
+.StudentsSay{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.StudentsSay h2{
+    margin-bottom: .5rem;
+}
+.StudentsSay h3{
+    margin-bottom: .5rem;
 }
