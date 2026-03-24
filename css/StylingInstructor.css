@@ -35,89 +35,105 @@ img{
     margin-left: 1rem;
 }
 /* NAVBAR */
-.navbar{
-    color: var(--clr-grey);
-    height: 6rem;
-    top: 0;
-    font-size: 1.25rem;
-    position: sticky;
-    z-index: 99;
-    display: flex;
-    justify-content: center;
-}
-.navbar_wrapper{
-   display: flex;
-    justify-content : space-between;
-    height: 100%; 
-    width: 100%; 
-    margin: 0 auto;
-    padding: 0 3rem;
-    z-index: 1;
-    background-color: var(--clr-Black);
-}
-.navbar_menu_container{
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-.navbar_link{
-    height: 100%;
-    margin: 3rem;
-    font-size: xx-large;
-    text-decoration: none;
-}
-.navbar_link:nth-child(2){
-    margin-right: 1rem;
-}
-.navbar_link_item{
+/* GENERAL NAVBAR STYLING */
+.navbar {
+    width: 100%;
+    background-color: #1e1e2f; /* Dark blue/gray */
     color: white;
-    display : flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    text-decoration: none; 
-    width: 6rem;
-    transition: all 0.3s ease;
-}
-#navbar_logo{
-    color: var(--clr-White);
-    background-size: 100%;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-size: x large;
-    /*background*/
-    background-clip: none;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-#navbar_logo:hover{
-   transition: all 0.5s ease-in-out;
-   transform: scale(1.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-.navbar_link_button{
+/* NAVBAR WRAPPER */
+.navbar_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100% ;
-    padding: 0 1rem;
+    justify-content: space-between;
+}
+
+/* LOGO */
+#navbar_logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
     text-decoration: none;
-    padding: .5rem 1.5rem;
-    border-radius: .5rem;
-    height: 50%;
+    color: white;
 }
-.navbar_button:hover{
-    color: rgb(15, 15, 15);
-    transition: ease-in-out;
-    transform: scale(1.1);
+
+#navbar_logo img {
+    width: 50px;
+    height: auto;
 }
-.navbar_link_item:hover{
-    color: var(--clr-Blue);
-    transition: ease-in-out;
-    transform: scale(1.3);
+
+/* MOBILE MENU ICON */
+.navbar_logo {
+    display: none; /* Hide for desktop */
+    flex-direction: column;
+    cursor: pointer;
 }
+
+.navbar_logo .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* NAV MENU LINKS */
+.navbar_menu_container {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar_link_item {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar_link_item:hover {
+    color: #3980fa; /* Hover color */
+    border-bottom: 2px solid #3980fa;
+}
+
+/* MOVE TO BOTTOM OF CSS LATER*/
+/* @media screen and (max-width: 768px) {
+    .navbar_logo {
+        display: flex;
+    }
+
+    .navbar_menu_container {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: #1e1e2f;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transition: 0.5s;
+    }
+
+    .navbar_menu_container.active {
+        left: 0;
+    }
+} */
+
+
+
 /* END OF NAVBAR STYLING */
 
 #BigRoethImage{

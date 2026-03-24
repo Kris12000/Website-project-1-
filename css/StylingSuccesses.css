@@ -9,11 +9,124 @@
     --clr-Yellow: #FDE021;
     --clr-Black: #231F20;
     --clr-White: #FFFFFF;
-
-        
-
-
-
-
+}
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: var(--font-style);
+scroll-behavior: smooth;
 
 }
+img{
+    display: block;
+    max-width: 10%;
+    max-height: 70%;
+    min-width: 8%;
+    min-height: 65%;
+    margin-left: 1rem;
+}
+/* NAVBAR */
+/* GENERAL NAVBAR STYLING */
+.navbar {
+    width: 100%;
+    background-color: #1e1e2f; /* Dark blue/gray */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* NAVBAR WRAPPER */
+.navbar_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+#navbar_logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar_logo img {
+    width: 50px;
+    height: auto;
+}
+
+/* MOBILE MENU ICON */
+.navbar_logo {
+    display: none; /* Hide for desktop */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar_logo .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* NAV MENU LINKS */
+.navbar_menu_container {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar_link_item {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar_link_item:hover {
+    color: #3980fa; /* Hover color */
+    border-bottom: 2px solid #3980fa;
+}
+
+/* MOVE TO BOTTOM OF CSS LATER*/
+/* @media screen and (max-width: 768px) {
+    .navbar_logo {
+        display: flex;
+    }
+
+    .navbar_menu_container {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: #1e1e2f;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transition: 0.5s;
+    }
+
+    .navbar_menu_container.active {
+        left: 0;
+    }
+} */
+
+
+
+
+
+
+
