@@ -25,7 +25,7 @@ font-family: var(--font-style);
 scroll-behavior: smooth;
 
 }
-img{
+#navbar_logo img {
     display: block;
     max-width: 10%;
     max-height: 70%;
@@ -37,20 +37,21 @@ img{
 /* GENERAL NAVBAR STYLING */
 .navbar {
     width: 100%;
-    background-color: #1e1e2f; /* Dark blue/gray */
+    background-color: #1e1e2f; 
     color: white;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-style);
+    
 }
 
 /* NAVBAR WRAPPER */
 .navbar_wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+    height: 3.5rem;
+    margin: 0;
     padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
@@ -66,6 +67,10 @@ img{
     text-decoration: none;
     color: white;
 }
+#navbar_logo:hover {
+    transition: ease-in-out 0.3s;
+    transform: scale(1.2);
+}
 
 #navbar_logo img {
     width: 50px;
@@ -78,6 +83,7 @@ img{
     flex-direction: column;
     cursor: pointer;
 }
+
 
 .navbar_logo .bar {
     height: 3px;
@@ -92,6 +98,8 @@ img{
     list-style: none;
     display: flex;
     gap: 2rem;
+    justify-content: right;
+    align-items: right;
 }
 
 .navbar_link_item {
@@ -104,6 +112,7 @@ img{
 .navbar_link_item:hover {
     color: #3980fa; /* Hover color */
     border-bottom: 2px solid #3980fa;
+    transform: scale(1.2);
 }
 
 /* MOVE TO BOTTOM OF CSS LATER*/
@@ -138,7 +147,7 @@ img{
 /* SECTION STYLING */
 .Navigation {
     padding: 80px 20px;
-    background: #f5f7fa;
+    background: linear-gradient(to bottom,  #0052bd,#666666);
     text-align: center;
 }
 
@@ -169,6 +178,7 @@ img{
     flex-direction: column;
     align-items: center;
 }
+
 
 .services_card:hover {
     transform: translateY(-10px);
@@ -216,3 +226,118 @@ img{
 } */
 
 /* END OF CARDS SECTION STYLING *****************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Foooter*/
+.footer{
+    background: linear-gradient(to bottom, #666666, #0052bd);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+.footer_links{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.social_media{
+    width: 90%;    
+    margin: 0 auto;;
+
+}
+.footer_links_wrapper{
+display: flex;
+flex-direction: row;
+}
+.footer_link_item{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    text-align: left;
+    width: 10rem;
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+.footer_link_item a:hover{
+    color: var(--clr-pink);
+    transition: var(--transition);
+    transform: scale(1.1);
+}
+.social_media_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 2rem auto 1rem auto;
+}
+.social_media_wrapper > p{
+    color: var(--clr-white);
+
+}
+.social_media_icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 20rem;
+}
+.social_media_icons a{
+    color: var(--clr-pink);
+    font-size: 2rem;
+    transition: var(--transition);
+}
+.social_media_icons a:hover{
+    color: var(--clr-white);
+    transition: var(--transition);
+    transform: scale(1.5);
+}
+.social_media_link{
+    font-size: 2rem;
+}
+.footer_link_item h2{
+    color: var(--clr-white);
+    padding-bottom: 1rem;
+}
+.footer_link_item a{
+    text-decoration: none;
+    margin-bottom: .5rem;
+    color: #02a2ff;
+    font-size: 1.2rem;
+}
+/* END OF FOOTER SECTION STYLING *****************************************************************************************/
