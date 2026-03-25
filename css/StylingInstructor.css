@@ -13,6 +13,8 @@
     
     --transition: all .3s ease-in-out;
 
+    --clr-gradient: linear-gradient(90deg, #002856 0%, #0093C9 100%);
+
 
 
 
@@ -132,6 +134,9 @@ scroll-behavior: smooth;
     margin: 0 auto;
     padding: 0 3rem;
     z-index: 1;
+}
+.RoethDetails{
+    background: var(--clr-gradient);
 }
 /* Wrapper For Cards */
 .CardsWrapper{
