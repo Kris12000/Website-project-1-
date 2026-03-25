@@ -213,19 +213,18 @@ scroll-behavior: smooth;
     margin-top: 3rem;
 }
 
-/*CARASOUL STYLING*/
-/* ul {
+/* CARASOUL STYLING*/ *
+ #scroll{
   width: 100vw;
   height: 300px;
   padding: 20px;
   display: flex;
-  gap: 4vw;
-}
-ul {
+  gap: 4vw;  
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
-li {
+
+#scroll li {
   list-style-type: none;
   background-color: #eeeeee;
   border: 1px solid #dddddd;
@@ -234,12 +233,12 @@ li {
   flex: 0 0 100%;
 }
 
-li:nth-child(even) {
+#scroll li:nth-child(even) {
   background-color: rgb(255, 255, 255);
 }
 li {
   scroll-snap-align: center;
-} */
+}
 
 
 
