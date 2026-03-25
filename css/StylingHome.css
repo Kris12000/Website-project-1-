@@ -147,9 +147,9 @@ scroll-behavior: smooth;
 /* SERVICES CARD */
 .services_card {
     background: white;
-    border-radius: 15px;
+    border-radius: 18px;
     padding: 30px 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px var(--clr-grey);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -159,12 +159,12 @@ scroll-behavior: smooth;
 
 .services_card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 30px var(--clr-Dark-Blue);
 }
 
 /* CARD HEADINGS*/
 .services_card h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 15px;
     color: var(--clr-Dark-Blue);
 }
@@ -173,6 +173,7 @@ scroll-behavior: smooth;
     font-size: 1rem;
     margin-bottom: 25px;
     color: #555;
+    max-width: 100px;
 }
 
 /* BUTTON STYLING */
@@ -197,7 +198,7 @@ scroll-behavior: smooth;
 
 /*Resources Section*/
 #Eastland{
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin-bottom: 5rem;
 
@@ -215,8 +216,8 @@ scroll-behavior: smooth;
 
 /* CARASOUL STYLING*/ *
  #scroll{
-  width: 100vw;
-  height: 300px;
+  width: 90vw;
+  height: 370px;
   padding: 20px;
   display: flex;
   gap: 4vw;  
@@ -234,7 +235,10 @@ scroll-behavior: smooth;
 }
 
 #scroll li:nth-child(even) {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--clr-Dark-Blue);  
+}
+#scroll li:nth-child(odd) {
+  background-color: var(--clr-Blue);  
 }
 li {
   scroll-snap-align: center;
@@ -243,7 +247,77 @@ li {
 
 
 /*END OF CARASOUL STYLING*/    
+
+/*Sliding EFFECT STYLING*/
+#body{
+    /* Prevents scrollbars from appearing during the animation */
+    overflow-x: hidden; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    background-color: #f0f0f0;
+}
+
+.slide-container {
+    /* Apply the animation */
+    animation-duration: 1.5s; /* Duration of the animation */
+    animation-name: slideInFromLeft; /* Name of the keyframe animation */
+    animation-delay: 0.5s; /* Optional delay before the animation starts */
+    animation-fill-mode: backwards; /* Ensures the start styles are applied immediately */
+    
+    padding: 20px;
+    background-color: #ffffff;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+@keyframes slideInFromLeft {
+from {
+    /* Start position: 100% width to the left (off-screen) */
+    transform: translateX(-100vw);
+    opacity: 0;
+    }
+    to {
+        /* End position: original position on the screen */
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+/*END OF Sliding EFFECT STYLING*/
+
 /* END OF RESOURCES SECTION STYLING *****************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Foooter Section  ******************************************************************************************************************************************/
 .footer{
@@ -357,7 +431,12 @@ flex-direction: row;
     .navbar_menu_container.active {
         left: 0;
     }
+    
+    #scroll li{
+        max-width: 50%;
+    }
 }
+
 
 
 
