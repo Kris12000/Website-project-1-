@@ -11,12 +11,11 @@
     --clr-White: #FFFFFF;
     --clr-grey: #8d8d8d;
     --transition: all 0.3s ease-in-out;    
+    --clr-gradient: linear-gradient(90deg, #002856 0%, #0093C9 100%);
 
 /* SARDAR IS WORKING ON THIS*/
-
-
-
 }
+
 *{
 box-sizing: border-box;
 margin: 0;
@@ -39,7 +38,7 @@ scroll-behavior: smooth;
     width: 100%;
     height:4rem;
     background-color: #1e1e2f; 
-    color: white;
+    color: var(--clr-White);
     position: fixed;
     top: 0;
     left: 0;
@@ -66,7 +65,7 @@ scroll-behavior: smooth;
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: var(--clr-White);
 }
 #navbar_logo:hover {
     transition: ease-in-out 0.3s;
@@ -106,14 +105,14 @@ scroll-behavior: smooth;
 
 .navbar_link_item {
     text-decoration: none;
-    color: white;
+    color: var(--clr-White);
     transition: 0.3s;
 
 }
 
 .navbar_link_item:hover {
-    color: var(--clr-Green); /* Hover color */
-    border-bottom: 2px solid var(--clr-Green);
+    color: var(--clr-Blue); /* Hover color */
+    border-bottom: 2px solid var(--clr-Blue);
     transform: scale(1.2);
 }
 
@@ -124,14 +123,14 @@ scroll-behavior: smooth;
 /* SECTION STYLING */
 .Navigation {
     padding: 80px 20px;
-    background: white;
+    background: var(--clr-gradient);
     text-align: center;
 }
 
 .Navigation h1 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #1e1e2f;
+    color: var(--clr-Dark-Blue);
     font-weight: 700;
 }
 
@@ -146,7 +145,7 @@ scroll-behavior: smooth;
 
 /* SERVICES CARD */
 .services_card {
-    background: white;
+    background: var(--clr-White);
     border-radius: 18px;
     padding: 30px 20px;
     box-shadow: 0 8px 20px var(--clr-grey);
@@ -172,7 +171,7 @@ scroll-behavior: smooth;
 .services_card p {
     font-size: 1rem;
     margin-bottom: 25px;
-    color: #555;
+    color: var(--clr-grey);
     max-width: 100px;
 }
 
@@ -183,7 +182,7 @@ scroll-behavior: smooth;
     border: none;
     border-radius: 50px;
     background: var(--clr-Dark-Blue);
-    color: white;
+    color: var(--clr-White);
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -201,7 +200,8 @@ scroll-behavior: smooth;
     max-width: 100%;
     height: auto;
     margin-bottom: 5rem;
-
+    border:solid 1rem var(--clr-White);
+    border-radius: 8px;
 }
 #Map{
     width: 100%;
@@ -214,7 +214,7 @@ scroll-behavior: smooth;
     margin-top: 3rem;
 }
 
-/* CARASOUL STYLING*/ *
+/* CARASOUL STYLING*/
  #scroll{
   width: 90vw;
   height: 370px;
@@ -227,11 +227,11 @@ scroll-behavior: smooth;
 
 #scroll li {
   list-style-type: none;
-  background-color: #eeeeee;
-  border: 1px solid #dddddd;
-  padding: 20px;
-
+  background-color: var(--clr-White);
+  border: 1px solid var(--clr-Light-Grey);
+  padding: 20px;  
   flex: 0 0 100%;
+    border-radius: 8px;
 }
 
 #scroll li:nth-child(even) {
@@ -243,9 +243,19 @@ scroll-behavior: smooth;
 li {
   scroll-snap-align: center;
 }
-
-
-
+.Carousel_Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr-gradient);
+}
+.slider-container{
+    background: var(--clr-gradient);
+    justify-content: center;
+    text-align: center;
+}
 /*END OF CARASOUL STYLING*/    
 
 /*Sliding EFFECT STYLING*/
@@ -257,7 +267,7 @@ li {
     justify-content: center;
     align-items: center;
     height: 18vh;
-    background-color: #f0f0f0;
+    background-color: var(--clr-White);
 }
 
 .slide-container {
@@ -268,10 +278,50 @@ li {
     animation-fill-mode: backwards; /* Ensures the start styles are applied immediately */
     
     padding: 20px;
-    background-color: #ffffff;
-    color: white;
+    background-color: var(--clr-gradient);
+    color: var(--clr-Dark-Blue);
     border-radius: 8px;
     text-align: center;
+}
+.fire-text {
+    color: var(--clr-Blue); /* Base color of the flame */
+    font-size: 120px;
+    font-family: 'Raleway', sans-serif; 
+    display: inline-block;
+    /* Initial shadow for a glow effect */
+    text-shadow: 0 0 10px var(--clr-Blue), 0 0 20px var(--clr-Blue), 0 0 40px var(--clr-Dark-Blue), 0 0 60px var(--clr-Green);
+    animation: fire-flicker 2s infinite alternate linear; /* Flickering animation */
+}
+
+#Careers{
+    color: var(--clr-grey);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--clr-Dark-Blue);
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+}
+
+/*KEYFRAMES FOR ANIMATIONS*/
+
+@keyframes fire-flicker {
+    0%, 100% {
+        text-shadow: 
+            0 0 10px var(--clr-White), 
+            0 0 20px var(--clr-White), 
+            0 0 40px var(--clr-Dark-Blue), 
+            0 0 60px var(--clr-Green),
+            0 0 80px var(--clr-Blue);
+    }
+    50% {
+        text-shadow: 
+            0 0 15px var(--clr-Blue), 
+            0 0 25px var(--clr-Blue), 
+            0 0 50px var(--clr-White), 
+            0 0 70px var(--clr-Blue),
+            0 0 90px var(--clr-Blue);
+    }
 }
 @keyframes slideInFromLeft {
 from {
@@ -286,7 +336,7 @@ from {
     }
 }
 
-
+/*END OF KEYFRAMES FOR ANIMATIONS*/
 
 /*END OF Sliding EFFECT STYLING*/
 
@@ -321,7 +371,7 @@ from {
 
 /* Foooter Section  ******************************************************************************************************************************************/
 .footer{
-    background: white;
+    background: var(--clr-gradient);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -367,7 +417,7 @@ flex-direction: row;
     margin: 2rem auto 1rem auto;
 }
 .social_media_wrapper > p{
-    color: var(--clr-white);
+    color: var(--clr-White);
 
 }
 .social_media_icons{
@@ -382,7 +432,7 @@ flex-direction: row;
     transition: var(--transition);
 }
 .social_media_icons a:hover{
-    color: var(--clr-white);
+    color: var(--clr-White);
     transition: var(--transition);
     transform: scale(1.5);
 }
@@ -390,13 +440,13 @@ flex-direction: row;
     font-size: 2rem;
 }
 .footer_link_item h2{
-    color: var(--clr-white);
+    color: var(--clr-White);
     padding-bottom: 1rem;
 }
 .footer_link_item a{
     text-decoration: none;
     margin-bottom: .5rem;
-    color: #02a2ff;
+    color: var(--clr-Blue);
     font-size: 1.2rem;
 }
 /* END OF FOOTER SECTION STYLING *****************************************************************************************/
@@ -420,7 +470,7 @@ flex-direction: row;
         left: -100%;
         width: 100%;
         height: calc(100vh - 70px);
-        background-color: #1e1e2f;
+        background-color: var(--clr-Dark-Blue);
         flex-direction: column;
         align-items: center;
         justify-content: center;
