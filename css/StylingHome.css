@@ -10,6 +10,9 @@
     --clr-Black: #231F20;
     --clr-White: #FFFFFF;
     --clr-grey: #8d8d8d;
+    
+    
+    
     --transition: all 0.3s ease-in-out;    
     --clr-gradient: linear-gradient(90deg, #002856 0%, #0093C9 100%);
 
@@ -231,7 +234,7 @@ scroll-behavior: smooth;
   border: 1px solid var(--clr-Light-Grey);
   padding: 20px;  
   flex: 0 0 100%;
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 #scroll li:nth-child(even) {
@@ -276,7 +279,6 @@ li {
     animation-name: slideInFromLeft; /* Name of the keyframe animation */
     animation-delay: 0.5s; /* Optional delay before the animation starts */
     animation-fill-mode: backwards; /* Ensures the start styles are applied immediately */
-    
     padding: 20px;
     background-color: var(--clr-gradient);
     color: var(--clr-Dark-Blue);
@@ -341,33 +343,6 @@ from {
 /*END OF Sliding EFFECT STYLING*/
 
 /* END OF RESOURCES SECTION STYLING *****************************************************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Foooter Section  ******************************************************************************************************************************************/
 .footer{
@@ -483,8 +458,9 @@ flex-direction: row;
     }
     
     #scroll li{
-        max-width: 50%;
+        max-width: 50px;
     }
+        
 }
 
 
