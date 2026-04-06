@@ -456,9 +456,17 @@ flex-direction: row;
     .navbar_menu_container.active {
         left: 0;
     }
-    
+    #PicOne, #PicTwo, #PicThree, #PicFour, #PicFive, #PicSix, #PicSeven, #PicEight, #PicNine, #PicTen, #PicEleven, #PicTwelve, #PicThirteen, #PicFourteen, #PicFifteen, #PicSixteen, #PicSeventeen, #PicEighteen, #PicNineteen, #PicTwenty{
+        max-width: 850px;
+        max-height: 500px;
+    }
+    li{
+        max-width: 850px;
+        max-height: 500px;
+    }
     #scroll li{
         max-width: 50px;
+        max-height: 100px;
     }
         
 }
