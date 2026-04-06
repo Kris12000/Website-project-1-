@@ -1,5 +1,5 @@
 let currentIndex=0;
-const slides = documentquerySelectorAll(".carousel-item img");
+const slides = document.querySelectorAll(".carousel-item img");
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
 
@@ -9,7 +9,7 @@ if (index >= slides.length) currentIndex = 0;
 else if (index < 0) currentIndex = slides.length - 1;
 else currentIndex = index;
 
-slides[currentIndex].classlist.add("active"); 
+slides[currentIndex].classList.add("active"); 
 }
 
 next.addEventListener("click", () => showSlide(currentIndex + 1));
