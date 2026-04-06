@@ -147,7 +147,7 @@ scroll-behavior: smooth;
 
 /*  END OF ABOUT STYLING SECTION */
 /* CAROUSEL STYLING */
- #carousel{
+ #carouselindicators{
   width: 90vw;
   padding: 20px;
   display: grid;
