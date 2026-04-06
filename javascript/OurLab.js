@@ -1,5 +1,5 @@
 let currentIndex=0;
-const slides = documentquerySelectorAll(".carousel-slide img");
+const slides = documentquerySelectorAll(".carousel-item img");
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
 
