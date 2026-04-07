@@ -1,3 +1,25 @@
+:root{
+    --font-style: "raleway", "sans-serif";
+    
+    --clr-Dark-Blue: #002856;
+    --clr-Blue: #0093C9;
+    --clr-Green: #80bc00;
+
+    --clr-Orange: #FF4D00;
+    --clr-Yellow: #FDE021;
+    --clr-Black: #231F20;
+    --clr-White: #FFFFFF;
+    --clr-grey: #8d8d8d;
+    
+    --transition: all .3s ease-in-out;
+
+    --clr-gradient: linear-gradient(90deg, #002856 0%, #0093C9 100%);
+
+
+
+
+
+}
 #navbar_logo img {
     display: block;
     max-width: 10%;
@@ -88,4 +110,48 @@
     color: var(--clr-Green); /* Hover color */
     border-bottom: 2px solid var(--clr-Green);
     transform: scale(1.2);
+}
+
+.TopImages{
+    padding-top: 4.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: .25rem;
+
+    
+}
+.TopImages1{
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+}
+.TopImages2{
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+}
+.TopImages3{
+    justify-content: center;
+    align-items: center;
+    grid-column: 3;
+}
+.TopImages4{
+    grid-column: 4;
+}
+.TopImages5{
+    grid-column: 5;
+}
+.TopImages6{
+    grid-column: 6;
+}
+.TopImages img {
+    width: auto;
+    height: 175px;
+    border-radius: 1rem;
+}
+.TopImages img:hover{
+    transition: var(--transition);
+    transform: scale(1.02);
 }
