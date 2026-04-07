@@ -119,8 +119,38 @@ scroll-behavior: smooth;
     transform: scale(1.2);
 }
 
+/* Hamburger */
+.hamburger {
+  display: none; /* Hidden on desktop */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Toggle hamburger to X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
 
 
+
+/*END OF NAVBAR*/
 
 /* Start of Cards Section -------------------------------------------------*/
 /* SECTION STYLING */
@@ -428,34 +458,36 @@ flex-direction: row;
 
 
 /*QUERIES SECTION*/
-@media screen and (max-width: 850px) {
-    .Navigation h1 {
-        font-size: 2rem;
-    }
-    .services_card h2 {
-        font-size: 1.3rem;
-    }
-    .navbar_logo {
-        display: flex;
-    }
-
-    .navbar_menu_container {
-        position: fixed;
-        top: 70px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 70px);
-        background-color: var(--clr-Dark-Blue);
+    @media screen and (max-width: 850px) {
+        .navbar_menu_container {
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        background-color: #1e1e2f;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        transition: 0.5s;
+        width: 200px;
+        display: none;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     .navbar_menu_container.active {
-        left: 0;
+        display: flex;
     }
+
+    .hamburger {
+        display: flex; /* Show hamburger on mobile */
+    }
+
+    .navbar_link_item {
+        padding: 0.5rem 0;
+    }
+    
+
+    /* END OF NAVBAR MOBILE VIEW*****************************/
+
+
     #PicOne, #PicTwo, #PicThree, #PicFour, #PicFive, #PicSix, #PicSeven, #PicEight, #PicNine, #PicTen, #PicEleven, #PicTwelve, #PicThirteen, #PicFourteen, #PicFifteen, #PicSixteen, #PicSeventeen, #PicEighteen, #PicNineteen, #PicTwenty{
         max-width: 850px;
         max-height: 500px;
@@ -468,8 +500,16 @@ flex-direction: row;
         max-width: 50px;
         max-height: 100px;
     }
-        
-}
+    #scroll {
+    gap: 12px; 
+    padding: 10px;
+  }
+
+  #scroll li {
+    flex: 0 0 85%; 
+  }
+}    
+
 
 
 
