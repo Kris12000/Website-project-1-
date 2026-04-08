@@ -10,6 +10,10 @@
     --clr-Black: #231F20;
     --clr-White: #FFFFFF;
     --transition: all 0.3s ease-in-out;    
+     --clr-gradient: linear-gradient(90deg, #002856 0%, #0093C9 100%);
+}
+.html{
+        background: var(--clr-gradient);
 }
 *{
 box-sizing: border-box;
@@ -18,6 +22,10 @@ padding: 0;
 font-family: var(--font-style);
 scroll-behavior: smooth;
 
+
+}
+.About{
+    background: var(--clr-gradient);
 }
 #navbar_logo img {
     display: block;
@@ -116,10 +124,12 @@ scroll-behavior: smooth;
 .About_Wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    max-width: 64rem;
+    gap: 20px;
+    max-width: 70rem;
     margin: 0 auto;
-
+    display:grid;
+    align-content: center;
+    
 }
 .About_Card {
     background: white;
@@ -138,6 +148,7 @@ scroll-behavior: smooth;
 .About_Wrapper p{
     font-size: 1rem;
     color: var(--clr-Black);
+    
 }
 .About_Card:hover{
     transition: var(--transition);
