@@ -12,9 +12,7 @@
     --transition: all 0.3s ease-in-out;    
      --clr-gradient: linear-gradient(90deg, #002856 0%, #0093C9 100%);
 }
-.html{
-        background: var(--clr-gradient);
-}
+
 *{
 box-sizing: border-box;
 margin: 0;
@@ -174,6 +172,7 @@ scroll-behavior: smooth;
     align-content: center;
     justify-content: center;
     margin: 3rem;
+    height: -30px;
 }
 
 
