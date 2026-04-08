@@ -18,102 +18,81 @@ font-family: var(--font-style);
 scroll-behavior: smooth;
 
 }
-#navbar_logo img {
-    display: block;
-    max-width: 10%;
-    max-height: 70%;
-    min-width: 8%;
-    min-height: 65%;
-    margin-left: 1rem;
-}
-/* NAVBAR */
-/* GENERAL NAVBAR STYLING */
-.navbar {
-    width: 100%;
-    height:4rem;
-    background-color: #1e1e2f; 
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    font-family: var(--font-style);
-    
+
+/************* CERTIFICATIONS STYLING ************************/
+.Navigation {
+    padding: 80px 20px;
+    background: var(--clr-gradient);
+    text-align: center;
 }
 
-/* NAVBAR WRAPPER */
-.navbar_wrapper {
-    height: 100%;
-    margin: 0;
-    padding: 0.5rem 1rem;
+.Navigation h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--clr-Dark-Blue);
+    font-weight: 700;
+}
+
+/* SERVICES WRAPPER */
+.services_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+/* SERVICES CARD */
+.services_card {
+    background: var(--clr-White);
+    border-radius: 18px;
+    padding: 50px 30px;
+    box-shadow: 0 8px 20px var(--clr-grey);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* LOGO */
-#navbar_logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-}
-#navbar_logo:hover {
-    transition: ease-in-out 0.3s;
-    transform: scale(1.2);
-}
-
-#navbar_logo img {
-    width: 50px;
-    height: auto;
-}
-
-/* MOBILE MENU ICON */
-.navbar_logo {
-    display: none; /* Hide for desktop */
     flex-direction: column;
+    align-items: center;
+}
+
+
+.services_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px var(--clr-Dark-Blue);
+}
+
+/* CARD HEADINGS*/
+.services_card h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--clr-Dark-Blue);
+}
+
+.services_card p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    color: var(--clr-grey);
+    max-width: 100px;
+}
+
+/* BUTTON STYLING */
+.services_button button {
+    padding: 10px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    background: var(--clr-Dark-Blue);
+    color: var(--clr-White);
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-.navbar_logo .bar {
-    height: 3px;
-    width: 25px;
-    background-color: white;
-    margin: 4px 0;
-    transition: 0.3s;
+.services_button button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px var(--clr-grey);
 }
-
-/* NAV MENU LINKS */
-.navbar_menu_container {
-    list-style: none;
-    display: flex;
-    gap: 4rem;
-    justify-content: right;
-    align-items: right;
-    font-weight: 900;
+.SuccessesSection {
+    padding: 80px 20px;
+    text-align: center;
 }
-
-.navbar_link_item {
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-
-}
-
-.navbar_link_item:hover {
-    color: var(--clr-Green); /* Hover color */
-    border-bottom: 2px solid var(--clr-Green);
-    transform: scale(1.2);
-}
-
-
-
-
-
-
-
 

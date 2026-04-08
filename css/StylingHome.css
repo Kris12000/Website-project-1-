@@ -15,9 +15,9 @@
     --transfrom: scale(1.2);
     --transition: all 0.3s ease-in-out;    
     --clr-gradient: linear-gradient(90deg, #002856 0%, #0093C9 100%);
-
-/* SARDAR IS WORKING ON THIS*/
 }
+/* SARDAR IS WORKING ON THIS*/
+
 
 *{
 box-sizing: border-box;
@@ -25,133 +25,9 @@ margin: 0;
 padding: 0;
 font-family: var(--font-style);
 scroll-behavior: smooth;
-
-}
-#navbar_logo img {
-    display: block;
-    max-width: 10%;
-    max-height: 70%;
-    min-width: 8%;
-    min-height: 65%;
-    margin-left: 1rem;
-}
-/* NAVBAR */
-/* GENERAL NAVBAR STYLING */
-.navbar {
-    width: 100%;
-    height:4rem;
-    background-color: #1e1e2f; 
-    color: var(--clr-White);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    font-family: var(--font-style);
-    
-}
-
-/* NAVBAR WRAPPER */
-.navbar_wrapper {
-    height: 100%;
-    margin: 0;
-    padding: 0.5rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* LOGO */
-#navbar_logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--clr-White);
-}
-#navbar_logo:hover {
-    transition: ease-in-out 0.3s;
-    transform: scale(1.2);
-}
-
-#navbar_logo img {
-    width: 50px;
-    height: auto;
-}
-
-/* MOBILE MENU ICON */
-.navbar_logo {
-    display: none; /* Hide for desktop */
-    flex-direction: column;
-    cursor: pointer;
 }
 
 
-.navbar_logo .bar {
-    height: 3px;
-    width: 25px;
-    background-color: white;
-    margin: 4px 0;
-    transition: 0.3s;
-}
-
-/* NAV MENU LINKS */
-.navbar_menu_container {
-    list-style: none;
-    display: flex;
-    gap: 4rem;
-    justify-content: right;
-    align-items: right;
-    font-weight: 900;
-}
-
-.navbar_link_item {
-    text-decoration: none;
-    color: var(--clr-White);
-    transition: 0.3s;
-
-}
-
-.navbar_link_item:hover {
-    color: var(--clr-Blue); /* Hover color */
-    border-bottom: 2px solid var(--clr-Blue);
-    transform: scale(1.5);
-}
-
-
-/* Hamburger */
-.hamburger {
-  display: none; /* Hidden on desktop */
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.hamburger span {
-  height: 3px;
-  width: 25px;
-  background-color: white;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-/* Toggle hamburger to X */
-.hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-
-
-/*END OF NAVBAR*/
 
 /* Start of Cards Section -------------------------------------------------*/
 /* SECTION STYLING */
@@ -411,7 +287,7 @@ flex-direction: row;
     display: flex;
     flex-direction: column;
     margin: 1rem;
-    text-align: left;
+    text-align: center;
     width: 10rem;
     box-sizing: border-box;
     transition: var(--transition);
