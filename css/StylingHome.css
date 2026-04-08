@@ -12,7 +12,7 @@
     --clr-grey: #8d8d8d;
     
     
-    
+    --transfrom: scale(1.2);
     --transition: all 0.3s ease-in-out;    
     --clr-gradient: linear-gradient(90deg, #002856 0%, #0093C9 100%);
 
@@ -116,8 +116,9 @@ scroll-behavior: smooth;
 .navbar_link_item:hover {
     color: var(--clr-Blue); /* Hover color */
     border-bottom: 2px solid var(--clr-Blue);
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
+
 
 /* Hamburger */
 .hamburger {
@@ -180,7 +181,7 @@ scroll-behavior: smooth;
 .services_card {
     background: var(--clr-White);
     border-radius: 18px;
-    padding: 30px 20px;
+    padding: 50px 30px;
     box-shadow: 0 8px 20px var(--clr-grey);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -258,6 +259,12 @@ scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
 }
 
+#PicOne, #PicTwo, #PicThree, #PicFour, #PicFive, #PicSix, #PicSeven, #PicEight, #PicNine, #PicTen, #PicEleven, #PicTwelve, #PicThirteen, #PicFourteen, #PicFifteen, #PicSixteen, #PicSeventeen, #PicEighteen, #PicNineteen, #PicTwenty{
+    max-width: 8000px;
+    max-height: 8000px;
+    border-radius: 1rem;
+}
+
 #scroll li {
   list-style-type: none;
   background-color: var(--clr-White);
@@ -275,6 +282,7 @@ scroll-behavior: smooth;
 }
 li {
   scroll-snap-align: center;
+  max-width: fit-content;
 }
 .Carousel_Container {
     width: 100%;
@@ -458,7 +466,21 @@ flex-direction: row;
 
 
 /*QUERIES SECTION*/
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 850px) 
+    {
+        .footer_links{
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer_link_item{
+            width: 100%;
+            text-align: center;
+        }
+        .social_media_wrapper{
+            flex-direction: column;
+            gap: 1rem;
+        }
+    
         .navbar_menu_container {
         position: absolute;
         top: 4rem;
@@ -470,45 +492,55 @@ flex-direction: row;
         padding: 1rem;
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    }
+        }
 
-    .navbar_menu_container.active {
-        display: flex;
-    }
+        .navbar_menu_container.active {
+            display: flex;
+        }
 
-    .hamburger {
-        display: flex; /* Show hamburger on mobile */
-    }
+        .hamburger {
+            display: flex; /* Show hamburger on mobile */
+        }
 
-    .navbar_link_item {
-        padding: 0.5rem 0;
-    }
+        .navbar_link_item {
+            padding: 0.5rem 0;
+        } 
+     
+
+        /* END OF NAVBAR MOBILE VIEW*****************************/
+
+
+        #PicOne, #PicTwo, #PicThree, #PicFour, #PicFive, #PicSix, #PicSeven, #PicEight, #PicNine, #PicTen, #PicEleven, #PicTwelve, #PicThirteen, #PicFourteen, #PicFifteen, #PicSixteen, #PicSeventeen, #PicEighteen, #PicNineteen, #PicTwenty{
+            max-width: 700px;
+            max-height: 700px;
+            border-radius: 2rem;
+        }
+        
+        #scroll {
+        gap: 3px; 
+        padding: 50px;
+        max-height: 20rem;
+        max-width: fit-content;
+        }
+        .li{
+        max-width: 3rem;
+        max-height: 5rem;
+
+        }
+        #scroll, li {
+        flex: 0 0 85%; 
+        }
+        #map, #Programs{
+        height: 30vh;
+        }
+        .services_wrapper {
+            grid-template-columns: 1fr; /* Stack cards vertically on mobile */
+            width: fit-content;
+        }
+    }    
+
+
     
-
-    /* END OF NAVBAR MOBILE VIEW*****************************/
-
-
-    #PicOne, #PicTwo, #PicThree, #PicFour, #PicFive, #PicSix, #PicSeven, #PicEight, #PicNine, #PicTen, #PicEleven, #PicTwelve, #PicThirteen, #PicFourteen, #PicFifteen, #PicSixteen, #PicSeventeen, #PicEighteen, #PicNineteen, #PicTwenty{
-        max-width: 850px;
-        max-height: 500px;
-    }
-    li{
-        max-width: 850px;
-        max-height: 500px;
-    }
-    #scroll li{
-        max-width: 50px;
-        max-height: 100px;
-    }
-    #scroll {
-    gap: 12px; 
-    padding: 10px;
-  }
-
-  #scroll li {
-    flex: 0 0 85%; 
-  }
-}    
 
 
 
