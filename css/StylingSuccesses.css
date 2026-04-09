@@ -44,6 +44,7 @@ winners_wrapper {
 }
 
 /* SERVICES CARD */
+winners_card {
     background: var(--clr-White);
     border-radius: 18px;
     padding: 50px 30px;
@@ -75,6 +76,7 @@ winners_card p {
 }
 
 /* BUTTON STYLING */
+winners_button button {
     padding: 10px 25px;
     font-size: 1rem;
     border: none;
