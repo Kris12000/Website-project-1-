@@ -161,26 +161,39 @@ scroll-behavior: smooth;
  #carouselindicators{
   width: 90vw;
   padding: 20px;
-  display: grid;
   margin: 5rem;
+  display: grid;
+  position: relative;
   align-content: center;
   justify-content: center;
-  gap: 4px;  
 
 }
 
 .carousel-control-prev{
    position: absolute;
    top: 50%;
+   left: 0;
    transform: translateY(-50%);
    color: black;
    border: none;
    padding: 10px;
- 
-}
-#carousel-control-next{
+   display: grid;
+   align-content:first baseline;
 
 }
+.carousel-control-next{
+  position: absolute;
+  top: 50%;
+  right: 0; /* stick to right side */
+  transform: translateY(-50%);
+  color: black;
+  border: none;
+  padding: 20px;
+     display: grid;
+   align-content:last baseline;
+
+}
+
 
 
 
