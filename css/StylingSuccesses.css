@@ -20,6 +20,12 @@ scroll-behavior: smooth;
 }
 /****** SARDAR IS WORKING ON THIS *******/
 /************* CERTIFICATIONS STYLING ************************/
+
+.span{
+    color: var(--clr-White);
+}
+
+
 .winnersSection {
     padding: 80px 20px;
     background: var(--clr-gradient);
@@ -29,16 +35,16 @@ scroll-behavior: smooth;
 .winnersSection h1 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: var(--clr-Dark-Blue);
+    color: var(--clr-White);
     font-weight: 700;
 }
 
 /* SERVICES WRAPPER */
 .winners_wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 20px 40px;
     
@@ -53,13 +59,8 @@ scroll-behavior: smooth;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     align-items: center;
-    margin: 30px 300px;
-    width: fit-content;
-    height: fit-content;
-    justify-content: center;
-    flex-direction: row;
-    text-align: center;
-
+    margin: 30px 300px;   
+    background-color: var(--clr-White);
 }
 
 
@@ -72,7 +73,7 @@ scroll-behavior: smooth;
 .winners_card h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: var(--clr-Dark-Blue);
+    color: var(--clr-White);
     display: flex;
     justify-content: center;
 }
@@ -80,7 +81,7 @@ scroll-behavior: smooth;
 .winners_card p {
     font-size: 1rem;
     margin-bottom: 25px;
-    color: var(--clr-grey);
+    color: var(--clr-White);
     max-width: 100px;
     margin: auto;
 }
@@ -101,39 +102,34 @@ scroll-behavior: smooth;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px var(--clr-grey);
 }
-.winnersSection .winners_wrapper .winners_card .winners_button button a{
-    padding: 80px 20px;
-    text-align: center;
-}
+
 #RoethCerts{
-    width: 50rem;
+    width: 70rem;
     height: 40rem;
     margin-bottom: 20px;
     border-radius: 2rem;
-    align-items: right;
-    justify-content: right;
-    margin: auto;
+    margin: 0 auto;
 }
 #RoethBPA{
-    width: 20rem;
-    height: 20rem;
+    width: 70rem;
+    height: 40rem;
     margin-bottom: 20px;
     border-radius: 2rem;
-    margin: auto;
+    margin: 0 auto;
 }
 #RoethBPA2{
-    width: 20rem;
-    height: 20rem;
+    width:70rem;
+    height: 40rem;
     margin-bottom: 20px;
     border-radius: 2rem;
-    margin: auto;
+    margin: 0 auto;
 }
 #RoethBPA3{
-    width: 20rem;
-    height: 20rem;
+    width: 70rem;
+    height: 40rem;
     margin-bottom: 20px;
     border-radius: 2rem;
-    margin: auto;
+    margin: 0 auto;
 }
 
 
