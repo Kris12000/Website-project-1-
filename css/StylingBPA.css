@@ -22,7 +22,51 @@
 }
 
 body{
-    background-color: var(--clr-Dark-Blue);
+    background: var(--clr-gradient);
+}
 
+
+.gap{
+    padding-top: 4rem;
+}
+
+.HeadingContainer{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.HeadingRow{
+    border-radius: 1.5rem;
+    width: 85%;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--clr-Dark-Blue);
+    gap: 1rem;
+}
+
+.HeadingCard{
+    width: 90%;
+    height: 10rem;
+    max-height: auto;
+    border-radius: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: var(--clr-Green);
+    
+}
+
+.HeadingCard h1{
+    color: var(--clr-Blue);
+    text-align: center;
+    font-size: 3rem;
+}
+
+.HeadingCard p{
+    color: var(--clr-Orange);
+    font-size: 1.5rem;
 }
 
