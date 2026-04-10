@@ -141,19 +141,22 @@ scroll-behavior: smooth;
     
 }
 .About_card {
-    background: var(--clr-White);
+ background: white;
     border-radius: 18px;
-    padding: 50px; 
+    padding: 30px 20px;
     box-shadow: 0 8px 20px var(--clr-grey);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem;
+    border-radius: 2rem;
+    color: var(--clr-Black);
+    justify-content: space-between;
     /* display: flex; */
     /* align-items: center; */
     /* margin: 30px 300px; */
-    width: fit-content;
-    height: fit-content; 
-     justify-content: center; 
-    flex-direction: row; 
-    text-align: center; 
+
 
 }
  .About_Wrapper h2{
