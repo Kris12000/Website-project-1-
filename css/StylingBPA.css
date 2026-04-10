@@ -102,3 +102,17 @@ a{
     transition: var(--transition);
     transform: scale(1.02);
 }
+
+@media screen and (max-width: 850px){
+    .ImageCard img{
+        width: 45%;
+        height: auto;
+    }
+    .ImagesCardsRows{
+        margin-left: 5rem;
+    }
+    section{
+        align-items: center;
+        justify-content: center;
+    }
+}
