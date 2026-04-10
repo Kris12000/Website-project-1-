@@ -104,15 +104,25 @@ a{
 }
 
 @media screen and (max-width: 850px){
-    .ImageCard img{
-        width: 45%;
-        height: auto;
-    }
-    .ImagesCardsRows{
-        margin-left: 5rem;
-    }
-    section{
+/* Stack the rows vertically */
+    .ImagesCardsRows {
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+    }
+
+    /* Stack the images inside the card vertically */
+    .ImageCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; /* Adds space between stacked images */
+    }
+
+    /* Remove the right padding so the image is truly centered */
+    .ImageCard img {
+        padding-right: 0;
+        /* Optional: make images responsive so they don't overflow small screens */
+        max-width: 90%; 
+        height: auto;
     }
 }
