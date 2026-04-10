@@ -25,38 +25,43 @@ body{
     background: var(--clr-gradient);
 }
 
+a{
+    color: var(--clr-Orange);
+    text-decoration: none;
+}
 
 .gap{
-    padding-top: 4rem;
+    padding-top: 6rem;
 }
 
 .HeadingContainer{
     display: flex;
     justify-content: center;
-    padding-top: 1rem;
+    align-items: center;
 }
 
 .HeadingRow{
     border-radius: 1.5rem;
     width: 85%;
-    height: 23rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: var(--clr-Dark-Blue);
     gap: 1rem;
+    padding-bottom: 1rem;
 }
 
 .HeadingCard{
     width: 90%;
-    height: 10rem;
-    max-height: auto;
+    height: auto;
     border-radius: 1.5rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     background: var(--clr-Green);
-    
+    align-items: center;
+    padding-bottom: 1rem;
 }
 
 .HeadingCard h1{
@@ -66,7 +71,34 @@ body{
 }
 
 .HeadingCard p{
-    color: var(--clr-Orange);
+    text-align: center;
+    color: var(--clr-Dark-Blue);
     font-size: 1.5rem;
+    width: 90%;
 }
 
+.ImagesContainer{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ImagesCardsRows{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: .5rem;
+}
+
+.ImageCard img{
+    height: 350px;
+    width: auto;
+    border-radius: 1rem;
+    padding-right: .5rem;
+    transition: var(--transition);
+}
+
+.ImageCard img:hover{
+    transition: var(--transition);
+    transform: scale(1.02);
+}
