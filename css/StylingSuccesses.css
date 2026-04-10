@@ -71,3 +71,52 @@
     transform: translateY(-8px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.25);
 }
+.certsSection {
+    padding: 80px 20px;
+    background: var(--clr-gradient);
+    text-align: center;
+}
+
+.certsSection h1 {
+    font-size: 2.5rem;
+    color: var(--clr-White);
+    margin-bottom: 10px;
+}
+.certsSection p{
+    padding: 30px;
+    text-align: center;
+    color: var(--clr-White);
+}
+
+
+/* GRID */
+.Certs_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CARD */
+.certs_card {
+    background: var(--clr-White);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px var(--clr-grey);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* IMAGE */
+.certs_card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* HOVER EFFECT */
+.certs_card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
