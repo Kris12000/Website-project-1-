@@ -18,7 +18,6 @@
 
 /* SARDAR IS WORKING ON THIS*/
 }
-
 *{
 box-sizing: border-box;
 margin: 0;
@@ -149,3 +148,35 @@ scroll-behavior: smooth;
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* MOBILE VIEW */
+@media screen and (max-width: 850px) {
+
+  /* Show hamburger */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Hide menu by default */
+  .navbar_menu_container {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background-color: #1e1e2f;
+    
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  /* When active (open) */
+  .navbar_menu_container.active {
+    max-height: 300px;
+    padding: 1rem 0;
+  }
+}

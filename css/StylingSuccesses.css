@@ -1,31 +1,26 @@
-:root{
-    --font-style: "raleway", "sans-serif";
-    
+:root {
+    --font-style: "Raleway", sans-serif;
+
     --clr-Dark-Blue: #002856;
     --clr-Blue: #0093C9;
     --clr-Green: #80bc00;
-
-    --clr-Oranage: #FF4D00;
+    --clr-Orange: #FF4D00;
     --clr-Yellow: #FDE021;
     --clr-Black: #231F20;
     --clr-White: #FFFFFF;
-}
-*{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-font-family: var(--font-style);
-scroll-behavior: smooth;
+    --clr-grey: rgba(0,0,0,0.15);
 
-}
-/****** SARDAR IS WORKING ON THIS *******/
-/************* CERTIFICATIONS STYLING ************************/
-
-.span{
-    color: var(--clr-White);
+    --clr-gradient: linear-gradient(135deg, #002856, #0093C9);
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-style);
+}
 
+/* SECTION */
 .winnersSection {
     padding: 80px 20px;
     background: var(--clr-gradient);
@@ -34,102 +29,45 @@ scroll-behavior: smooth;
 
 .winnersSection h1 {
     font-size: 2.5rem;
-    margin-bottom: 40px;
     color: var(--clr-White);
-    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-/* SERVICES WRAPPER */
+.winners_subtext {
+    color: var(--clr-White);
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* GRID */
 .winners_wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1300px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 40px;
-    
 }
 
-/* SERVICES CARD */
+/* CARD */
 .winners_card {
     background: var(--clr-White);
-    border-radius: 18px;
-    padding: 50px 30px;
+    border-radius: 16px;
+    overflow: hidden;
     box-shadow: 0 8px 20px var(--clr-grey);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    align-items: center;
-    margin: 30px 300px;   
-    background-color: var(--clr-White);
 }
 
+/* IMAGE */
+.winners_card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
 
+/* HOVER EFFECT */
 .winners_card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px var(--clr-Dark-Blue);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
 }
-
-/* CARD HEADINGS*/
-.winners_card h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: var(--clr-White);
-    display: flex;
-    justify-content: center;
-}
-
-.winners_card p {
-    font-size: 1rem;
-    margin-bottom: 25px;
-    color: var(--clr-White);
-    max-width: 100px;
-    margin: auto;
-}
-
-/* BUTTON STYLING */
-.winners_button button {
-    padding: 10px 25px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 50px;
-    background: var(--clr-Dark-Blue);
-    color: var(--clr-White);
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.winners_button button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px var(--clr-grey);
-}
-
-#RoethCerts{
-    width: 70rem;
-    height: 40rem;
-    margin-bottom: 20px;
-    border-radius: 2rem;
-    margin: 0 auto;
-}
-#RoethBPA{
-    width: 70rem;
-    height: 40rem;
-    margin-bottom: 20px;
-    border-radius: 2rem;
-    margin: 0 auto;
-}
-#RoethBPA2{
-    width:70rem;
-    height: 40rem;
-    margin-bottom: 20px;
-    border-radius: 2rem;
-    margin: 0 auto;
-}
-#RoethBPA3{
-    width: 70rem;
-    height: 40rem;
-    margin-bottom: 20px;
-    border-radius: 2rem;
-    margin: 0 auto;
-}
-
-
